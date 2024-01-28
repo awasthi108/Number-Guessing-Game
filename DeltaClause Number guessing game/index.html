@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.0.0/dist/canvas-confetti.umd.js"></script>
+
+    <title>Number Guessing Game</title>
+</head>
+<body style="background-image: url('background.jpg'); background-size: cover; background-size: 100%;>
+    <div class="container-blur">
+        <div class="container text-center">
+            <div class="jumbotron mt-5">
+                <h1 class="display-4">🎉 Number Guessing Game 🎉</h1>
+                <p class="lead">Can you guess the number between 1 and 100?</p>
+                <input type="number" id="guess" class="form-control" min="1" max="100">
+                <button id="submitBtn" class="btn btn-primary mt-3">Submit Guess</button>
+                <p id="result" class="mt-4"></p>
+                <audio id="correctSound" src="correct.mp3"></audio>
+                <audio id="wrongSound" src="wrong.mp3"></audio>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+body {
+   margin: 0;
+   padding: 0;
+   overflow: hidden;
+   background: url('background.jpg') no-repeat center center fixed;
+   background-size: cover;
+   filter: blur(8px);
+}
+
+.jumbotron {
+   background: rgba(0, 0, 0, 0.7);
+   color: #ffffff;
+   border-radius: 15px;
+   padding: 30px;
+   margin-top: 50px;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+   animation: fadeIn 1s;
+}
+
+.btn-primary {
+   background-color: #28a745;
+   border-color: #28a745;
+}
+
+.btn-primary:hover {
+   background-color: #218838;
+   border-color: #1e7e34;
+}
+
+.text-danger {
+   color: #dc3545 !important;
+}
+
+.text-success {
+   color: #28a745 !important;
+}
+
+.dynamic-bg {
+   background: linear-gradient(45deg, #007bff, #28a745);
+   animation: changeBackground 10s infinite;
+}
+
+@keyframes changeBackground {
+   0% {
+       background: linear-gradient(45deg, #007bff, #28a745);
+   }
+   25% {
+       background: linear-gradient(45deg, #28a745, #dc3545);
+   }
+   50% {
+       background: linear-gradient(45deg, #dc3545, #ffc107);
+   }
+   75% {
+       background: linear-gradient(45deg, #ffc107, #007bff);
+   }
+   100% {
+       background: linear-gradient(45deg, #007bff, #28a745);
+   }
+}
+
+@keyframes fadeIn {
+   from {
+       opacity: 0;
+   }
+   to {
+       opacity: 1;
+   }
+}
